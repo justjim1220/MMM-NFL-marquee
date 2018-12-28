@@ -1,6 +1,6 @@
-# MMM-NFL [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://raw.githubusercontent.com/fewieden/MMM-NFL/master/LICENSE) [![Build Status](https://travis-ci.org/fewieden/MMM-NFL.svg?branch=master)](https://travis-ci.org/fewieden/MMM-NFL) [![Code Climate](https://codeclimate.com/github/fewieden/MMM-NFL/badges/gpa.svg?style=flat)](https://codeclimate.com/github/fewieden/MMM-NFL) [![Known Vulnerabilities](https://snyk.io/test/github/fewieden/mmm-nfl/badge.svg)](https://snyk.io/test/github/fewieden/mmm-nfl)
+# MMM-NFL-marquee
 
-National Football League Module for MagicMirror<sup>2</sup>
+a scrolling version of the NFL box scores modified from @fewieden's MMM-NFL a 3<sup>rd</sup> Party Module for MagicMirror<sup>2</sup> <br> (currently supported by pc devices other than RasPi, works with Windows and Ubuntu)
 
 ## Example
 
@@ -23,12 +23,17 @@ National Football League Module for MagicMirror<sup>2</sup>
 
     ```
     {
-        module: 'MMM-NFL',
-        position: 'top_right',
+        module: "MMM-NFL-marquee",
+        position: "top_bar", // works best in top or bottom bar
         config: {
-            ...
+            colored: true,
+            helmets: false,
+            focus_on: false,
+            format: "ddd h:mm", // shows date and time of upcoming games as: Sunday @ 12:00
+            reloadInterval: 30 * 60 * 1000,  // every 30 minutes
+            reverseTeams: true // changes teams to show Home team second IE: LAR @ KC
         }
-    }
+    },
     ```
 
 1. Run command `npm install --productive` in `~/MagicMirror/modules/MMM-NFL` directory.
@@ -41,7 +46,8 @@ National Football League Module for MagicMirror<sup>2</sup>
 | `helmets` | `false` | Show helmets instead of logo. |
 | `focus_on` | `false` | Display only matches with teams of this array e.g. `['NYG', 'DAL', 'NE']`. |
 | `format` | `'ddd h:mm'` | In which format the date should be displayed. [All Options](http://momentjs.com/docs/#/displaying/format/) |
-| `reloadInterval` | `1800000` (30 mins) | How often should the data be fetched |
+| `reloadInterval` | `30 * 60 * 1000` (30 mins) | How often should the data be fetched |
+| `reverseTeams` | `true` | Changes teams to show Home team second IE: LAR @ KC
 
 ## OPTIONAL: Voice Control
 
