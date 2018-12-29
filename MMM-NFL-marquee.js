@@ -1,13 +1,15 @@
 /* global Module Log moment config */
 
 /* Magic Mirror
- * Module: MMM-NFL
+ * Module: MMM-NFL-marquee
  *
- * By fewieden https://github.com/fewieden/MMM-NFL
+ * by justjim1220
+ * 
+ * modified version of MMM-NFL By fewieden
  * MIT Licensed.
  */
 
-Module.register('MMM-NFL', {
+Module.register('MMM-NFL-marquee', {
 
     modes: {
         P: 'Pre-Season', // still a work in progress
