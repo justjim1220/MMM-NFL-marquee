@@ -1,24 +1,25 @@
 {
-  "name": "mmm-nfl",
+  "name": "mmm-nfl-marquee",
   "version": "1.0.0",
-  "description": "National Football League Module for MagicMirror2",
+  "description": "a scrolling version of the NFL box scores modified from @fewieden's MMM-NFL module",
   "scripts": {
     "lint": "./node_modules/.bin/eslint . && ./node_modules/.bin/stylelint ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fewieden/MMM-NFL.git"
+    "url": "git+https://github.com/justjim1220/MMM-NFL-marquee"
   },
   "keywords": [
     "MagicMirror",
-    "NFL"
+    "NFL",
+    "boxscores"
   ],
-  "author": "fewieden",
+  "author": "fewieden, modified by justjim1220",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fewieden/MMM-NFL/issues"
+    "url": "https://github.com/justjim1220/MMM-NFL-marquee/issues"
   },
-  "homepage": "https://github.com/fewieden/MMM-NFL#readme",
+  "homepage": "https://github.com/justjim1220/MMM-NFL-marquee#readme",
   "devDependencies": {
     "eslint": "^3.14.1",
     "eslint-config-airbnb-base": "^11.0.1",
