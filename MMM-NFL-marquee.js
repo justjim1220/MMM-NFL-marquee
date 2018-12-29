@@ -80,7 +80,7 @@ Module.register('MMM-NFL', {
     },
 
     getStyles() {
-        return ['font-awesome.css', 'MMM-NFL.css'];
+        return ['font-awesome.css', 'MMM-NFL-marquee.css'];
     },
 
     start() {
