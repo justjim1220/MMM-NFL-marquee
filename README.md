@@ -30,7 +30,7 @@ a scrolling version of the NFL box scores modified from @fewieden's MMM-NFL a 3<
     ```
     {
         module: "MMM-NFL-marquee",
-        position: "top_bar", // works best in top or bottom bar
+        position: "bottom_bar", // works best in top or bottom bar
         config: {
             colored: true,
             helmets: false,
@@ -48,7 +48,7 @@ a scrolling version of the NFL box scores modified from @fewieden's MMM-NFL a 3<
 
 | **Option** | **Default** | **Description** |
 | --- | --- | --- |
-| `colored` | `false` | Remove black/white filter of logos/helmets. |
+| `colored` | `true` | Removes black/white filter of logos/helmets. |
 | `helmets` | `false` | Show helmets instead of logo. |
 | `focus_on` | `false` | Display only matches with teams of this array e.g. `['NYG', 'DAL', 'NE']`. |
 | `format` | `'ddd h:mm'` | In which format the date should be displayed. [All Options](http://momentjs.com/docs/#/displaying/format/) |
