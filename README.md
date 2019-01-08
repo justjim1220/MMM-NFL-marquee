@@ -4,7 +4,7 @@ a scrolling version of the NFL box scores modified from @fewieden's MMM-NFL a 3<
 
 ## Example
 
-![](https://github.com/justjim1220/MMM-NFL-marquee/blob/master/Screenshot (12).png) 
+![](https://github.com/justjim1220/MMM-NFL-marquee/blob/master/Screenshot%20(12).png) 
 ![](.github/Screenshot (13).png)
 ![](.github/Screenshot (14).png)
 ![](.github/Screenshot (15).png)
