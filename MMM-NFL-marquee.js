@@ -247,6 +247,12 @@ Module.register('MMM-NFL-marquee', {
         secondLabel.setAttribute('colspan', 3);
         labelRow.appendChild(secondLabel);
 
+        var tvLabel = document.createElement("th");
+        var tvIcon = document.createElement("i");
+        tvIcon.classList.add("fa", "fa-television", "dimmed");
+        tvLabel.appendChild(tvIcon);
+        labelRow.appendChild(tvLabel);
+
         return labelRow;
     },
 
@@ -292,6 +298,11 @@ Module.register('MMM-NFL-marquee', {
             secondTeam.appendChild(secondTeamSpan);
             this.appendBallPossession(data, false, secondTeam);
             row.appendChild(secondTeam);
+
+            var tv = document.createElement("td");
+            tv.classList.add("dimmed");
+            tv.innerHTML = data.n ? data.n : "X";
+            row.appendChild(tv);
 
             const date = document.createElement('td');
             if (data.q in ['1', '2', '3', '4', 'H', 'OT']) {
