@@ -14,7 +14,7 @@ Module.register('MMM-NFL-marquee', {
     modes: {
         P: 'Pre-Season', // still a work in progress
         R: 'Regular-Season',
-        POST: 'Post-Season' // also still working on, currently will show the games
+        POST: 'Post-Season'
     },
 
     details: {
