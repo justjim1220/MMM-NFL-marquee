@@ -5,11 +5,12 @@ a scrolling version of the NFL box scores modified from @fewieden's MMM-NFL a 3<
 ## Example
 
 ![](https://github.com/justjim1220/MMM-NFL-marquee/blob/master/Screenshot%20(12).png) 
-![](.github/Screenshot (13).png)
-![](.github/Screenshot (14).png)
-![](.github/Screenshot (15).png)
-![](.github/Screenshot (16).png)
-![](.github/Screenshot (17).png)
+![](https://github.com/justjim1220/MMM-NFL-marquee/blob/master/Screenshot%20(13).png) 
+![](https://github.com/justjim1220/MMM-NFL-marquee/blob/master/Screenshot%20(14).png) 
+![](https://github.com/justjim1220/MMM-NFL-marquee/blob/master/Screenshot%20(15).png) 
+![](https://github.com/justjim1220/MMM-NFL-marquee/blob/master/Screenshot%20(16).png) 
+![](https://github.com/justjim1220/MMM-NFL-marquee/blob/master/Screenshot%20(17).png) 
+
 
 ## Dependencies
 
