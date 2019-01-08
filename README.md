@@ -4,7 +4,12 @@ a scrolling version of the NFL box scores modified from @fewieden's MMM-NFL a 3<
 
 ## Example
 
-![](.github/example.jpg) ![](.github/example2.jpg) ![](.github/example_focus.jpg) ![](.github/example_statistic.jpg) ![](.github/example_help.jpg) ![](.github/example_bye_week.png)
+![](.github/Screenshot (12).png)
+![](.github/Screenshot (13).png)
+![](.github/Screenshot (14).png)
+![](.github/Screenshot (15).png)
+![](.github/Screenshot (16).png)
+![](.github/Screenshot (17).png)
 
 ## Dependencies
 
