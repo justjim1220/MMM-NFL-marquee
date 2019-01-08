@@ -47,11 +47,12 @@
 
 
 .MMM-NFL-marquee {
-    width: 100%;
-    overflow: hidden;
-    overflow-x: hidden;
-    white-space: nowrap;
-    padding: 0 50px 100px 50px;
+	width: 100%;
+	overflow: hidden;
+	overflow-x: hidden;
+	white-space: nowrap;
+	font-family: "Macondo Swash Caps", cursive;
+	padding: 0 50px 80px 0;
 }
 
 .MMM-NFL-marquee .boxScore {
