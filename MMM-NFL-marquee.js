@@ -266,16 +266,16 @@ Module.register('MMM-NFL-marquee', {
             firstTeam.classList.add('align-right');
             this.appendBallPossession(data, true, firstTeam);
             const firstTeamSpan = document.createElement('span');
-            firstTeamSpan.innerHTML = this.getTeamName(data[this.config.reverseTeams ? 'v' : 'h']) + "&nbsp;";
+            firstTeamSpan.innerHTML = this.getTeamName(data[this.config.reverseTeams ? 'v' : 'h']) + "&nbsp;&nbsp;";
             firstTeam.appendChild(firstTeamSpan);
             row.appendChild(firstTeam);
 
             const firstLogo = document.createElement('td');
-            firstLogo.appendChild(this.createIcon(data[this.config.reverseTeams ? 'v' : 'h'])) + "&nbsp;";
+            firstLogo.appendChild(this.createIcon(data[this.config.reverseTeams ? 'v' : 'h'])) + "&nbsp;&nbsp;&nbsp;";
             row.appendChild(firstLogo);
 
             const firstScore = document.createElement('td');
-            firstScore.innerHTML = "<font color=#0080ff>" + data[this.config.reverseTeams ? 'vs' : 'hs'] + "</font>";
+            firstScore.innerHTML = "&nbsp;&nbsp;&nbsp;<font color=#0080ff>" + data[this.config.reverseTeams ? 'vs' : 'hs'] + "</font>";
             row.appendChild(firstScore);
 
             const vs = document.createElement('td');
@@ -284,17 +284,17 @@ Module.register('MMM-NFL-marquee', {
             row.appendChild(vs);
 
             const secondScore = document.createElement('td');
-            secondScore.innerHTML = "<font color=#0080ff>" + data[this.config.reverseTeams ? 'hs' : 'vs'] + "&nbsp;" + "</font>";
+            secondScore.innerHTML = "<font color=#0080ff>" + data[this.config.reverseTeams ? 'hs' : 'vs'] + "&nbsp;&nbsp;&nbsp;</font>";
             row.appendChild(secondScore);
 
             const secondLogo = document.createElement('td');
-            secondLogo.appendChild(this.createIcon(data[this.config.reverseTeams ? 'h' : 'v'], true)) + "&nbsp;";
+            secondLogo.appendChild(this.createIcon(data[this.config.reverseTeams ? 'h' : 'v'], true)) + "&nbsp;&nbsp;";
             row.appendChild(secondLogo);
 
             const secondTeam = document.createElement('td');
             secondTeam.classList.add('align-left');
             const secondTeamSpan = document.createElement('span');
-            secondTeamSpan.innerHTML = this.getTeamName(data[this.config.reverseTeams ? 'h' : 'v']);
+            secondTeamSpan.innerHTML = "&nbsp;&nbsp;" + this.getTeamName(data[this.config.reverseTeams ? 'h' : 'v']) + "&nbsp;&nbsp;";
             secondTeam.appendChild(secondTeamSpan);
             this.appendBallPossession(data, false, secondTeam);
             row.appendChild(secondTeam);
@@ -326,7 +326,7 @@ Module.register('MMM-NFL-marquee', {
             row.appendChild(date);
 
             const separator = document.createElement('td');
-            separator.innerHTML = "&nbsp;&nbsp;<img class = image src=./modules/MMM-NFL/icons/nfl.png>&nbsp;&nbsp;";
+            separator.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;<img class = image src=./modules/MMM-NFL-marquee/icons/nfl.png>&nbsp;&nbsp;";
             row.appendChild(separator);
 
             appendTo.appendChild(row);
