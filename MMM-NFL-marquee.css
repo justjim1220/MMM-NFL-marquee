@@ -1,141 +1,175 @@
 @import url('https://fonts.googleapis.com/css?family=Macondo+Swash+Caps');
 
+@import url('https://fonts.googleapis.com/css?family=Englebert');
+
 @-webkit-keyframes MMM-NFL-pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @-moz-keyframes MMM-NFL-pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes MMM-NFL-pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @keyframes MMM-NFL-pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@-moz-keyframes marquee {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-100%, 0);
-    }
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @-webkit-keyframes marquee {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-100%, 0);
-    }
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@-moz-keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@-ms-keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@-o-keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }
 
 @keyframes marquee {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-100%, 0);
-    }
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }
 
-
 .MMM-NFL-marquee {
-	width: 100%;
-	overflow: hidden;
-	overflow-x: hidden;
-	white-space: nowrap;
-	font-family: "Macondo Swash Caps", cursive;
-	padding: 0 50px 80px 0;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+  white-space: nowrap;
+  font-family: "Englebert", cursive;
+  padding: 0 50px 80px 0;
+  margin-bottom: 50px;
 }
 
 .MMM-NFL-marquee .boxScore {
-    width: auto;
-    padding-left: 100%;
-    position: absolute;
-    display: inline-block;
-    text-align: center;
-    /* Starting position */
-    -webkit-transform:translateX(100%);
-    -moz-transform:translateX(100%);
-    -o-transform:translateX(100%);
-    transform:translateX(100%);
-    /* Apply animation to this element */	
-    -webkit-animation: marquee 60s linear infinite;
-    -moz-animation: marquee 60s linear infinite;
-    -o-animation: marquee 50s linear infinite;
-    animation: marquee 60s linear infinite;
+  padding-left: 100%;
+  text-indent: 0;
+  margin-bottom: 50px;
+  position: absolute;
+  display: inline-block;
+  text-align: left;
+  font-family: "Macondo Swash Caps", cursive;
+  /* Starting position  */
+  -webkit-transform:translateX(100%);
+  -moz-transform:translateX(100%);
+  -ms-transform:translateX(100%);
+  -o-transform:translateX(100%);
+  transform:translateX(100%);
+  /* Apply animation to this element */
+  -webkit-animation: marquee 60s linear infinite;
+  -moz-animation: marquee 60s linear infinite;
+  -o-animation: marquee 60s linear infinite;
+  animation: marquee 60s linear infinite;
 }
 
 .MMM-NFL-marquee .boxScore:hover {
-    animation-play-state: paused
+  animation-play-state: paused
 }
 
 .MMM-NFL-marquee .icon {
-    vertical-align: middle;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    filter: grayscale(100%);
+  vertical-align: middle;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .MMM-NFL-marquee .row {
-    vertical-align: middle;
-    text-align: center;
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Englebert", cursive;
 }
 
 .MMM-NFL-marquee .redzone {
-    -webkit-animation: MMM-NFL-pulse 2s infinite;
-    -moz-animation: MMM-NFL-pulse 2s infinite;
-    -o-animation: MMM-NFL-pulse 2s infinite;
-    animation: MMM-NFL-pulse 2s infinite;
+  -webkit-animation: MMM-NFL-pulse 2s infinite;
+  -moz-animation: MMM-NFL-pulse 2s infinite;
+  -o-animation: MMM-NFL-pulse 2s infinite;
+  animation: MMM-NFL-pulse 2s infinite;
 }
 
 .MMM-NFL-marquee .live {
-    font-size: 10px;
-    line-height: 15px;
-    display: block;
+  font-size: 10px;
+  line-height: 15px;
+  display: block;
 }
 
 .MMM-NFL-marquee .ball-home {
-    vertical-align: middle;
-    width: 50px;
-    margin-right: 10px;
+  vertical-align: middle;
+  width: 50px;
+  margin-right: 10px;
 }
 
 .MMM-NFL-marquee .ball-away {
-    vertical-align: middle;
-    width: 50px;
-    margin-left: 10px;
+  vertical-align: middle;
+  width: 50px;
+  margin-left: 10px;
 }
 
 .MMM-NFL-marquee-blur {
-    -webkit-filter: blur(2px) brightness(50%);
-    -moz-filter: blur(2px) brightness(50%);
-    filter: blur(2px) brightness(50%);
+  -webkit-filter: blur(2px) brightness(50%);
+  -moz-filter: blur(2px) brightness(50%);
+  -ms-filter: blur(2px) brightness(50%);
+  filter: blur(2px) brightness(50%);
 }
 
 .MMM-NFL-marquee .modal {
-    position: fixed;
-    text-align: left;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%, -50%);
-    -moz-transform: translateX(-50%, -50%);
-    -o-transform: translateX(-50%, -50%);
-    transform: translateX(-50%, -50%);
+  position: fixed;
+  text-align: left;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%, -50%);
+  -moz-transform: translateX(-50%, -50%);
+  -ms-transform: translateX(-50%, -50%);
+  -o-transform: translateX(-50%, -50%);
+  transform: translateX(-50%, -50%);
 }
 
 .MMM-NFL-marquee .modal ul {
-    margin: 0;
+  margin: 0;
 }
 
 .MMM-NFL-marquee .image {
-    height: 100%;
-    vertical-align: middle;
+  height: 100%;
+  vertical-align: middle;
 }
